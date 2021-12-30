@@ -1,0 +1,57 @@
+
+{{>header}}
+
+{{>navbar}}
+
+    <div
+      class="container-form-blog d-flex align-items-center justify-content-center"
+    >
+      <div class="container-form">
+        <p class="h2 text-center mb-5">Create Post Blog</p>
+        <form action="/edit-blog/{{blog.id}}?_method=PUT" method="POST" enctype="multipart/form-data">
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">title</label>
+            <input
+              type="text"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              name="title"
+              value="{{blog.title}}"
+            />
+          </div>
+          <div class="mb-3">
+            <label
+              for="exampleFormControlTextarea1"
+              class="form-label"
+            >Content</label>
+            <textarea
+              type="text"
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              aria-describedby="emailHelp"
+              name="content"
+            >{{blog.content}}</textarea>
+          </div>
+          <div class="mb-3">
+            <label for="formFile" class="form-label">Upload image</label>
+            <input
+              type="file"
+              class="form-control"
+              id="formFile"
+              aria-describedby="emailHelp"
+              name="image"
+              value="{{blog.image}}"
+            />
+            <div class="img-preview"></div>
+          </div>
+          <div class="d-flex justify-content-end">
+            <button type="submit" class="btn btn-primary mt-3">
+              Post Blog
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+{{>footer}}

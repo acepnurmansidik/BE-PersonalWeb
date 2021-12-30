@@ -1,0 +1,108 @@
+
+{{>header}}
+
+{{>navbar}}
+
+    <div class="container">
+      <div class="section">
+        <div class="left-section">
+          <div class="item-profile">
+            <img src="assets/acep.png" alt="" />
+          </div>
+          <div class="item-desc">
+            <h2>Acep Nurman Sidik</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut,
+              similique quibusdam. Perspiciatis, temporibus numquam earum
+              maiores voluptate repellendus commodi odio in iste sequi debitis
+              perferendis dignissimos dolore, ut ipsa! Consequuntur.
+            </p>
+            <table border="1" style="border-collapse: collapse; width: 100%">
+              <tr>
+                <th style="text-align: center">Experience</th>
+                <th style="text-align: center">Year</th>
+              </tr>
+              {{#each experiences}}
+              <tr>
+                <td style="text-align: center">{{this.name}}</th>
+                <td style="text-align: center">{{this.year}}</th>
+              </tr>
+              {{/each}}
+            </table>
+          </div>
+        </div>
+        <div class="right-section">
+          <div class="item-personal">
+            <h1>What i do?</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+              doloribus modi consequuntur commodi illum iste! Dolor beatae,
+              commodi molestias delectus incidunt repudiandae earum. Mollitia,
+              molestiae iure optio commodi officiis voluptatum! Lorem ipsum
+              dolor sit amet, consectetur adipisicing elit. Et architecto ea
+              temporibus perspiciatis, vero molestias magni voluptatibus libero
+              culpa quasi minima amet sunt, voluptatem ex ipsum doloribus ullam
+              nemo. Iusto.
+            </p>
+          </div>
+          <div class="item-skill">
+            <div class="skill-1">
+              <img src="assets/expressjs.png" alt="" />
+              <h3>ExpressJS</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore
+                unde aperiam recusandae assumenda debitis illo non beatae dicta
+                excepturi praesentium!
+              </p>
+            </div>
+            <div class="skill-2">
+              <img src="assets/reactjs.png" alt="" />
+              <h3>ReactJS</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore
+                unde aperiam recusandae assumenda debitis illo non beatae dicta
+                excepturi praesentium!
+              </p>
+            </div>
+            <div class="skill-3">
+              <img src="assets/heroku.png" alt="" />
+              <h3>Heroku</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore
+                unde aperiam recusandae assumenda debitis illo non beatae dicta
+                excepturi praesentium!
+              </p>
+            </div>
+          </div>
+          <div class="item-sosmed">
+            <h2>Follow Me</h2>
+            <div class="link-sosmed">
+              <div class="sosmed">
+                <a href="https://www.instagram.com/acepnurmansidik_/?hl=id">
+                  <img src="assets/ig.png" alt="" />
+                </a>
+              </div>
+              <div class="sosmed">
+                <a href="https://web.facebook.com/acepnurmansidik/">
+                  <img src="assets/fb.png" alt="" />
+                </a>
+              </div>
+              <div class="sosmed">
+                <a href="https://github.com/acepnurmansidik">
+                  <img src="assets/github.png" alt="" />
+                </a>
+              </div>
+              <div class="sosmed">
+                <a
+                  href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJNvMSqtFVmjLpqFwswLbhJthKMcfvKkFLbMqhDTbCZzTJjWcCtRNzfBCRLHhPGGDPtBjJB"
+                >
+                  <img src="assets/email.png" alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+{{>footer}}

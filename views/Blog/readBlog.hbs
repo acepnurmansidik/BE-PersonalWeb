@@ -1,0 +1,86 @@
+
+{{>header}}
+
+{{>navbar}}
+
+{{>message}}
+    <div class="full-Container">
+      <div class="blog">
+        {{#if isLogin}}
+        <div class="blog-container" id="blog-container">
+          <a href="/add-blog" id="add-blog">Add Blog</a>
+          <hr class="line" />
+          <div id="contents" class="blog-list">
+            {{#each blogs}}
+              <div id="contents" class="blog-list">
+                <!-- dynamic content would be here -->
+                <div class="blog-list-item">
+                  <div class="blog-image">
+                    <img src="/uploads/blog/{{this.image}}" alt="" />
+                  </div>
+                  <!-- Content -->
+                  <div class="blog-content">
+                    <div class="btn-group">
+                      <form action="/delete-blog/{{this.id}}?_method=DELETE" method="post">
+                        <a href="/edit-blog/{{this.id}}" class="btn-edit">Edit Post</a>
+                        <button type="submit" class="btn-post">Delete Blog</a>
+                      </form>
+                    </div>
+                    <h1>
+                      <a href="/blog-detail/{{this.id}}">
+                        {{this.title}}
+                      </a>
+                    </h1>
+                    <div class="detail-blog-content">
+                      {{this.post_at}} | {{this.author}}
+                    </div>
+                    <p>
+                      {{this.content}}
+                    </p>
+                    <div style="text-align: right; font-size: 15px; color: gray;">
+                      1 Hours
+                    </div>
+                  </div>
+                </div>
+              </div>
+            {{/each}}
+          </div>
+        </div>
+        {{else}}
+        <div class="blog-container" id="blog-container">
+          <hr class="line" />
+          <div id="contents" class="blog-list">
+            {{#each blogs}}
+              <div id="contents" class="blog-list">
+                <!-- dynamic content would be here -->
+                <div class="blog-list-item">
+                  <div class="blog-image">
+                    <img src="/uploads/blog/{{this.image}}" alt="" />
+                  </div>
+                  <!-- Content -->
+                  <div class="blog-content">
+                    <h1>
+                      <a href="/blog-detail/{{this.id}}">
+                        {{this.title}}
+                      </a>
+                    </h1>
+                    <div class="detail-blog-content">
+                      {{this.post_at}} | {{this.author}}
+                    </div>
+                    <p>
+                      {{this.content}}
+                    </p>
+                    <div style="text-align: right; font-size: 15px; color: gray;">
+                      1 Hours
+                    </div>
+                  </div>
+                </div>
+              </div>
+            {{/each}}
+          </div>
+        </div>
+        {{/if}}
+      </div>
+    </div>
+
+{{>footer}}

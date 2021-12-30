@@ -1,0 +1,12 @@
+.container-form-blog {
+  height: 93vh;
+}
+
+.container-form {
+  width: 450px;
+}
+
+input:focus,
+textarea:focus {
+  box-shadow: none !important;
+}

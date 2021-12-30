@@ -1,0 +1,55 @@
+
+{{>header}}
+
+{{>navbar}}
+
+    <div class="container-content">
+      <div class="content">
+        <form>
+          <div class="form-containerr">
+            <div class="item">
+              <label for="input-name">Name*</label><br />
+              <input
+                id="input-name"
+                type="text"
+                placeholder="Enter your name "
+              />
+            </div>
+            <div class="item">
+              <label for="input-Email">Email*</label><br />
+              <input
+                id="input-Email"
+                type="text"
+                placeholder="Enter your email"
+              />
+            </div>
+            <div class="item">
+              <label for="input-Content">Subject*</label><br />
+              <select name="input-Content" id="input-Content">
+                <option value="Front End Developer">Front End Developer</option>
+                <option value="Back End Developer">Back End Developer</option>
+                <option value="Fullstack Developer">Fullstack Developer</option>
+              </select>
+            </div>
+            <div class="item">
+              <label for="input-Message">Message*</label><br />
+              <textarea
+                name="Message"
+                id="input-Message"
+                placeholder="Enter your Message"
+              ></textarea>
+            </div>
+            <button type="button" onclick="submitForm()">Submit</button>
+          </div>
+        </form>
+        <div class="your-info">
+          <h1>Your Message</h1>
+          <p>
+            Send me a message via the form below. I am very happy with your
+            suggestions to improve this website for everyone.
+          </p>
+        </div>
+      </div>
+    </div>
+
+{{>footer}}

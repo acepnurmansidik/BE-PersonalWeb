@@ -1,0 +1,92 @@
+.container-form a {
+  text-decoration: none;
+}
+
+/* START CONTENT ======================================== */
+/* .container {
+  background-image: linear-gradient(#4682b4, #00ffff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  box-sizing: border-box;
+  width: 100vw;
+  height: 90vh;
+}
+
+.container .section {
+  background-color: rgb(255, 255, 255);
+  border-radius: 0.3rem;
+  padding: 1.5rem;
+  display: flex;
+  height: 65vh;
+  width: 90vw;
+  border: 1px solid rgb(218, 218, 218);
+}
+
+.container .left-section,
+.container .right-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.5rem;
+  box-sizing: border-box;
+}
+
+.container .left-section {
+  flex: 1;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-right: 2px solid rgb(180, 180, 180);
+  color: black;
+}
+
+.left-section .item-profile {
+  background-color: coral;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.left-section .item-profile img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.container .right-section {
+  flex: 2;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.right-section .item-skill {
+  display: flex;
+}
+.right-section .item-skill div {
+  flex: 1;
+  padding: 0.7em;
+}
+.right-section .item-skill img {
+  width: 6rem;
+  height: 6rem;
+}
+
+.right-section .item-sosmed img:hover {
+  border-radius: 50%;
+  transition: 0.5s;
+  transform: scale(1.4);
+}
+
+.right-section .item-sosmed img {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 10px;
+  margin-right: 1em;
+  border: 1px solid rgb(201, 183, 183);
+}
+
+.right-section .link-sosmed {
+  display: flex;
+  align-items: center;
+} */
+/* END CONTENT ======================================== */
+
+/* MEDIA QUERY SCREEN ================================= */

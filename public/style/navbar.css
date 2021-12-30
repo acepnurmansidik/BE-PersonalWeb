@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  padding: 0;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+/* START NAVBAR  BASIC ============================= */
+/* .navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  height: 5em;
+} */
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show > .nav-link {
+  color: rgb(255, 0, 0);
+}
+
+.navbar-collapse {
+  flex-grow: unset;
+}
+
+.navbar-collapse {
+  font-weight: bold;
+  background-color: rgb(248, 248, 248);
+}
+
+.navbar-collapse form {
+  margin-left: 2em;
+}
+
+.navbar .navbar-brand {
+  color: var(--bs-orange);
+  font-family: "Fuzzy Bubbles", cursive;
+}
+.navbar .navbar-brand:hover {
+  color: var(--bs-orange);
+}
+
+/* END NAVBAR BASIC ============================= */
+
+/* START HUMBERGER MENU ============================= */
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+.navbar-toggler {
+  border: none;
+  position: relative;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: end;
+}
+
+.navbar-light .line-menu {
+  border-radius: 1em;
+  background-color: #0d6efd;
+  height: 0.15em;
+  width: 50%;
+}
+
+.navbar-toggler-icon input {
+  height: 2em;
+  width: 10em;
+  opacity: 0;
+  left: -3.65em;
+  right: 5em;
+  position: absolute;
+  z-index: 5;
+  cursor: pointer;
+}
+
+.navbar-light .line-menu:nth-child(2) {
+  transform-origin: 0 0;
+  width: 100%;
+}
+.navbar-light .line-menu:nth-child(4) {
+  transform-origin: 0 0;
+  width: 80%;
+}
+
+.navbar-toggler-icon input:checked ~ .line-menu:nth-child(2) {
+  transform: rotate(45deg) translate(-1px, -1px);
+  transition: 0.5s;
+}
+.navbar-toggler-icon input:checked ~ .line-menu:nth-child(4) {
+  transform: rotate(-45deg) translate(-1px, -1px);
+  transition: 0.5s;
+  width: 100%;
+}
+.navbar-toggler-icon input:checked ~ .line-menu:nth-child(3) {
+  opacity: 0;
+}
+/* END HUMBERGER MENU ============================= */
+
+/* MEDIA SCREEN QUERY */
+@media (max-width: 992px) {
+  /* .navbar {
+    height: 3.5em;
+    width: 100%;
+  } */
+  .navbar-collapse form {
+    margin-left: 0;
+  }
+}

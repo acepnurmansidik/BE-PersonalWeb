@@ -1,0 +1,122 @@
+/* START CONTACT ======================================== */
+
+.container-content {
+  background-image: linear-gradient(#4682b4, #00ffff);
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  background-color: white;
+  display: flex;
+  width: 70vw;
+  border: 1px solid white;
+}
+
+.form-containerr {
+  width: 80%;
+}
+
+form {
+  padding: 3em;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form input:focus,
+form select,
+form textarea {
+  outline-color: rgb(236, 239, 243);
+}
+
+form input,
+form textarea,
+form select {
+  letter-spacing: 1px;
+  font-size: 1em;
+  font-weight: bold;
+  color: rgb(29, 28, 28);
+  border: none;
+  margin-top: 7px;
+  padding: 12px;
+  width: 100%;
+  background-color: white;
+  border-bottom: 2px solid rgb(21, 103, 255);
+}
+
+form .item {
+  margin: 0 20px 20px 0px;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form select {
+  width: 100%;
+}
+
+form textarea {
+  height: 7rem;
+}
+
+form button {
+  font-weight: bold;
+  border: none;
+  height: 50px;
+  color: rgb(255, 255, 255);
+  width: 100px;
+  letter-spacing: 2px;
+  background-color: rgb(41, 44, 216);
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+form button:hover {
+  color: rgb(41, 44, 216);
+  border: 2px solid rgb(41, 44, 216);
+  background-color: rgb(255, 255, 255);
+  transition: 0.7s;
+}
+
+.your-info {
+  flex: 1;
+  padding: 3em;
+  color: white;
+  background-color: rgb(41, 44, 216);
+}
+
+/* END CONTACT ======================================== */
+
+@media (max-width: 992px) {
+  .container .section,
+  .container-content {
+    flex-direction: column;
+    margin: 2.2em 0 2.2em 0;
+  }
+  .content {
+    flex-direction: column;
+  }
+  form {
+    order: 2;
+  }
+  .your-info {
+    order: 1;
+  }
+}
+@media (min-width: 992px) {
+  .container,
+  .container-content {
+    height: 90vh;
+  }
+}
+@media (max-width: 576px) {
+  .right-section .item-skill {
+    flex-direction: column;
+  }
+}

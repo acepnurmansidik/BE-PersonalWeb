@@ -7,6 +7,7 @@ module.exports = {
       const experiences = await getDataDB(dataQuery);
       res.render("index", {
         experiences,
+        title: "Home",
       });
     } catch (err) {
       console.log(err);
@@ -14,7 +15,9 @@ module.exports = {
   },
   viewContactMe: async (req, res) => {
     try {
-      res.render("contact");
+      res.render("contact", {
+        title: "Contact Me",
+      });
     } catch (err) {
       console.log(err);
     }

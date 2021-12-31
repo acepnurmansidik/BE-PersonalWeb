@@ -46,6 +46,7 @@ module.exports = {
         blogs,
         isLogin: req.session.user,
         alert,
+        title: "Blog",
       });
     } catch (err) {
       req.flash("alertMessage", `${err}`);
@@ -63,6 +64,7 @@ module.exports = {
       blog.post_at = getFullTime(blog.post_at);
       res.render("Blog/detailBlog", {
         blog,
+        title: "Blog | Detail",
       });
     } catch (err) {
       req.flash("alertMessage", `${err}`);
@@ -78,6 +80,7 @@ module.exports = {
 
       res.render("Blog/addBlog", {
         alert,
+        title: "Blog | Create Blog",
       });
     } catch (err) {
       req.flash("alertMessage", `${err}`);
@@ -111,6 +114,7 @@ module.exports = {
       let data = await getDataDB(dataQuery);
       res.render("Blog/updateBlog", {
         blog: data[0],
+        title: "Blog | Update Blog",
       });
     } catch (err) {
       req.flash("alertMessage", `${err}`);

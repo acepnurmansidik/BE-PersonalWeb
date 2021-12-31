@@ -1,19 +1,12 @@
-const dbPool = require("../../config/db");
+const { getDataDB } = require("../../config/getData");
 
 module.exports = {
   viewHome: async (req, res) => {
     try {
       const dataQuery = `SELECT * FROM experience`;
-      dbPool.connect((err, client, done) => {
-        if (err) throw err;
-
-        client.query(dataQuery, (err, result) => {
-          done();
-          const experiences = result.rows.sort();
-          res.render("index", {
-            experiences,
-          });
-        });
+      const experiences = await getDataDB(dataQuery);
+      res.render("index", {
+        experiences,
       });
     } catch (err) {
       console.log(err);
